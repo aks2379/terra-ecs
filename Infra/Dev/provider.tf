@@ -8,8 +8,8 @@ provider "aws" {
   region                  = var.aws_region
 }
 
-resource "aws_dynamodb_table" "terraform_locks" {
-  name         = "terraform_locks"
+resource "aws_dynamodb_table" "terraform_locks_dev" {
+  name         = "terraform_locks_dev"
   billing_mode = "PAY_PER_REQUEST"
   hash_key     = "LockID"
 
